@@ -11,7 +11,7 @@ socket.on('message', text => {
 
 document.querySelector('button').onclick = () => {
 
-    const text = document.querySelector('input').value;
+    const text = document.querySelector('#messenger').value;
     socket.emit('message', text)
     
 }
